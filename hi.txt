@@ -1,1 +1,3 @@
-sằef
+git add <tên tệp>: Thêm tệp vào vùng chờ (staging area).
+git commit -m "<nội dung commit>": Tạo một commit với nội dung đã chỉ định.
+git push origin <tên nhánh>: Đẩy các commit lên nhánh trên máy chủ từ xa (remote repository). Lưu ý rằng bạn cần phải đã thiết lập kết nối với máy chủ từ xa trước khi có thể đẩy lên.
