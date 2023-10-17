@@ -2,6 +2,16 @@ git add <tên tệp>: Thêm tệp vào vùng chờ (staging area). hoac git add 
 git commit -m "<nội dung commit>": Tạo một commit với nội dung đã chỉ định.
 git push origin <tên nhánh>: Đẩy các commit lên nhánh trên máy chủ từ xa (remote repository). Lưu ý rằng bạn cần phải đã thiết lập kết nối với máy chủ từ xa trước khi có thể đẩy lên.
 
+Bạn có thể tạo một nhánh mới trên Git bằng cách làm theo các bước sau:
+
+Mở terminal hoặc Git bash.
+Di chuyển đến thư mục dự án của bạn bằng cách sử dụng lệnh cd <đường dẫn thư mục>.
+Kiểm tra xem bạn đang ở branch nào bằng lệnh git branch.
+Tạo một nhánh mới bằng lệnh git branch <tên nhánh mới>. Ví dụ: git branch feature.
+Chuyển sang nhánh mới bằng lệnh git checkout <tên nhánh mới>. Ví dụ: git checkout feature.
+
 muốn push vào nhánh "hung" :
 git checkout hung
 git push origin hung
+
+
