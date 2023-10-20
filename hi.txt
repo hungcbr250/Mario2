@@ -19,3 +19,10 @@ git pull origin main
 git fetch origin main
 Để pull (kéo) tất cả các thay đổi từ remote repository về dự án cục bộ của bạn, bạn có thể sử dụng lệnh git pull mà không cần chỉ định tên nhánh cụ thể. Điều này sẽ tự động pull từ nhánh được theo dõi (tracked branch) mà bạn đang làm việc trên nó.
 khi bạn sử dụng lệnh git fetch mà không chỉ định tên nhánh cụ thể, Git sẽ tải về tất cả các thay đổi từ remote repository cho tất cả các nhánh.
+
+cach push 1 project có sẵn
+git init
+git add .
+git commit -m"finsh-project"
+git remote add origin < link github của bạn >
+git push -u origin master
