@@ -2,8 +2,14 @@ git add <tên tệp>: Thêm tệp vào vùng chờ (staging area). hoac git add 
 git commit -m "<nội dung commit>": Tạo một commit với nội dung đã chỉ định.
 git push origin <tên nhánh>: Đẩy các commit lên nhánh trên máy chủ từ xa (remote repository). Lưu ý rằng bạn cần phải đã thiết lập kết nối với máy chủ từ xa trước khi có thể đẩy lên.
 
-Bạn có thể tạo một nhánh mới trên Git bằng cách làm theo các bước sau:
+cach push 1 project có sẵn
+git init
+git add .
+git commit -m"finsh-project"
+git remote add origin < link github của bạn >
+git push -u origin master
 
+Bạn có thể tạo một nhánh mới trên Git bằng cách làm theo các bước sau:
 Mở terminal hoặc Git bash.
 Di chuyển đến thư mục dự án của bạn bằng cách sử dụng lệnh cd <đường dẫn thư mục>.
 Kiểm tra xem bạn đang ở branch nào bằng lệnh git branch.
@@ -22,9 +28,4 @@ khi bạn sử dụng lệnh git fetch mà không chỉ định tên nhánh cụ
 
 cách check đang ở link git nào  : git remote -v
 
-cach push 1 project có sẵn
-git init
-git add .
-git commit -m"finsh-project"
-git remote add origin < link github của bạn >
-git push -u origin master
+Để kéo code từ nhánh dev vào nhánh hungndk, bạn cần vào nhánh hungndk rồi gõ lệnh git merge dev
