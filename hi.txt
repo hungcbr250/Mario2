@@ -16,6 +16,8 @@ Kiểm tra xem bạn đang ở branch nào bằng lệnh git branch.
 Tạo một nhánh mới bằng lệnh git branch <tên nhánh mới>. Ví dụ: git branch feature.
 Chuyển sang nhánh mới bằng lệnh git checkout <tên nhánh mới>. Ví dụ: git checkout feature.
 
+Muốn kiểm tra xem có những file nào sẽ thay đổi : git status.
+
 muốn push vào nhánh "hung" :
 git checkout hung
 git push origin hung
