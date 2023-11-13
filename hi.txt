@@ -31,3 +31,5 @@ khi bạn sử dụng lệnh git fetch mà không chỉ định tên nhánh cụ
 cách check đang ở link git nào  : git remote -v
 
 Để kéo code từ nhánh dev vào nhánh hungndk, bạn cần vào nhánh hungndk rồi gõ lệnh git merge dev
+
+Khi pull về mà muốn quay trở về thời điểm chưa pull : git reset --hard HEAD
