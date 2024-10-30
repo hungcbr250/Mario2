@@ -33,3 +33,22 @@ cách check đang ở link git nào  : git remote -v
 Để kéo code từ nhánh dev vào nhánh hungndk, bạn cần vào nhánh hungndk rồi gõ lệnh git merge dev
 
 Khi pull về mà muốn quay trở về thời điểm chưa pull : git reset --hard HEAD
+
+Lệnh undo commit (thường là git reset trong Git) được dùng để huỷ bỏ hoặc điều chỉnh các commit trước đó. Có một số trường hợp phổ biến để "undo" commit:
+
+Huỷ commit cuối cùng nhưng giữ lại thay đổi:
+
+Lệnh: git reset --soft HEAD~1
+
+Mục đích: Xoá commit cuối cùng nhưng giữ lại toàn bộ thay đổi trong staging area để có thể chỉnh sửa và commit lại sau.
+Huỷ commit cuối cùng và đưa thay đổi về trạng thái chưa được staged:
+
+Lệnh: git reset --mixed HEAD~1
+Mục đích: Loại bỏ commit cuối và chuyển các thay đổi vào working directory, giúp bạn chỉnh sửa lại trước khi commit.
+Huỷ commit cuối cùng và loại bỏ luôn thay đổi:
+
+Lệnh: git reset --hard HEAD~1
+Mục đích: Hoàn tác hoàn toàn commit cuối cùng và xoá mọi thay đổi liên quan, đưa kho về trạng thái của commit trước.
+Undo commit đã đẩy lên remote:
+
+Trong trường hợp commit đã đẩy lên remote, tốt nhất là dùng git revert để tạo một commit mới đảo ngược thay đổi của commit cũ. Điều này giúp tránh xung đột trên nhánh đã được chia sẻ với người khác
